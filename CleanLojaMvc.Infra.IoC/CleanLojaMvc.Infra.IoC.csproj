@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanLojaMvc.Domain\CleanLojaMvc.Domain.csproj" />
+    <ProjectReference Include="..\CleanLojaMvc.Application\CleanLojaMvc.Application.csproj" />
+    <ProjectReference Include="..\CleanLojaMvc.Infra.Data\CleanLojaMvc.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

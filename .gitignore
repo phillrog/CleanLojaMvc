@@ -3,3 +3,13 @@
 ################################################################################
 
 /CleanLojaMvc.Application/bin/Debug/net6.0
+/CleanLojaMvc.Application/obj
+/.vs/CleanLojaMvc/FileContentIndex
+/CleanLojaMvc.Domain/bin/Debug/net6.0
+/CleanLojaMvc.Domain/obj
+/CleanLojaMvc.Infra.Data/bin/Debug/net6.0
+/CleanLojaMvc.Infra.Data/obj
+/CleanLojaMvc.Infra.IoC/bin/Debug/net6.0
+/CleanLojaMvc.Infra.IoC/obj
+/CleanLojaMvc.WebUI/bin/Debug/net6.0
+/CleanLojaMvc.WebUI/obj
