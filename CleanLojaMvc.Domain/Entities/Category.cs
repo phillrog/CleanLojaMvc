@@ -14,7 +14,7 @@ namespace CleanLojaMvc.Domain.Entities
 
         public Category(int id, string name)
         {
-            DomainExceptionValidation.When(id < 0, "Invalid Id value");
+            DomainExceptionValidation.When(id < 0, "Invalid Id value.");
             Id = id;
             ValidateDomain(name);
         }        
@@ -26,7 +26,7 @@ namespace CleanLojaMvc.Domain.Entities
 
         private void ValidateDomain(string name) {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Invalid name.Name is required");
-            DomainExceptionValidation.When(name.Length == 0, "Invalid name.Name, too short, minimum 3 characters");
+            DomainExceptionValidation.When(name.Length < 3, "Invalid name.Name, too short, minimum 3 characters");
 
             Name = name;
         }
