@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanLojaMvc.Infra.Data.Repositories
 {
-    internal class CategoryRepository : ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private ApplicationDbContext _categoryContext;
         public CategoryRepository(ApplicationDbContext context)
