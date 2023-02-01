@@ -1,4 +1,7 @@
-﻿using CleanLojaMvc.Domain.Interfaces;
+﻿using CleanLojaMvc.Application.Insterfaces;
+using CleanLojaMvc.Application.Mappings;
+using CleanLojaMvc.Application.Services;
+using CleanLojaMvc.Domain.Interfaces;
 using CleanLojaMvc.Infra.Data.Context;
 using CleanLojaMvc.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +21,10 @@ namespace CleanLojaMvc.Infra.IoC
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             return services;
         }
