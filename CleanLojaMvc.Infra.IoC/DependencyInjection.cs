@@ -4,6 +4,7 @@ using CleanLojaMvc.Application.Services;
 using CleanLojaMvc.Domain.Interfaces;
 using CleanLojaMvc.Infra.Data.Context;
 using CleanLojaMvc.Infra.Data.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +26,9 @@ namespace CleanLojaMvc.Infra.IoC
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            var handlers = AppDomain.CurrentDomain.Load("CleanLojaMvc.Application");
+            services.AddMediatR(handlers);
 
             return services;
         }
