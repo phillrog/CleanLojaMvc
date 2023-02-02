@@ -1,0 +1,16 @@
+﻿using CleanLojaMvc.Domain.Entities;
+using MediatR;
+
+namespace CleanLojaMvc.Application.Products.Commands
+{
+    public abstract class ProductCommand : IRequest<Product>
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string Image { get; set; }
+        public int CategoryId { get; set; }
+    }
+}
