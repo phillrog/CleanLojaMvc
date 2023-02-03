@@ -12,5 +12,12 @@ namespace CleanLojaMvc.Application.DTOs
         [MaxLength(100)]
         [DisplayName("Name")]
         public string Name { get; set; }
+
+        public CategoryDTO() { }
+        public CategoryDTO(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }
