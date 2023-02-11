@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanLojaMvc.Infra.IoC", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanLojaMvc.WebUI", "CleanLojaMvc.WebUI\CleanLojaMvc.WebUI.csproj", "{B6FCEC6A-B76E-4AFF-A570-98174AC35BFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanLojaMvc.Test", "CleanLojaMvc\CleanLojaMvc.Test.csproj", "{0A4DAE10-250A-4DD5-8DCD-0E11B94785C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanLojaMvc.Test", "CleanLojaMvc\CleanLojaMvc.Test.csproj", "{0A4DAE10-250A-4DD5-8DCD-0E11B94785C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanLojaMvc.API", "CleanLojaMvc.API\CleanLojaMvc.API.csproj", "{88A0FD89-0F40-45C6-95F0-15E165C4EB15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0A4DAE10-250A-4DD5-8DCD-0E11B94785C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A4DAE10-250A-4DD5-8DCD-0E11B94785C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A4DAE10-250A-4DD5-8DCD-0E11B94785C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A0FD89-0F40-45C6-95F0-15E165C4EB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A0FD89-0F40-45C6-95F0-15E165C4EB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A0FD89-0F40-45C6-95F0-15E165C4EB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A0FD89-0F40-45C6-95F0-15E165C4EB15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

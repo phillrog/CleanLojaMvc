@@ -16,3 +16,5 @@
 /.vs
 /CleanLojaMvc/bin/Debug/net6.0
 /CleanLojaMvc/obj
+/CleanLojaMvc.API/bin/Debug/net6.0
+/CleanLojaMvc.API/obj
