@@ -1,5 +1,6 @@
 ﻿using CleanLojaMvc.Application.DTOs;
 using CleanLojaMvc.Application.Insterfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -73,6 +74,7 @@ namespace CleanLojaMvc.WebUI.Controllers
             return View(productDto);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet()]
         public async Task<IActionResult> Delete(int? id)
         {
