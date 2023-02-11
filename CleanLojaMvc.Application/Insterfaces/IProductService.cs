@@ -1,5 +1,6 @@
 ﻿using CleanLojaMvc.Application.DTOs;
 
+
 namespace CleanLojaMvc.Application.Insterfaces
 {
     public interface IProductService

@@ -43,6 +43,11 @@ namespace CleanLojaMvc.Infra.IoC
             var handlers = AppDomain.CurrentDomain.Load("CleanLojaMvc.Application");
             services.AddMediatR(handlers);
 
+            var sp = services.BuildServiceProvider();
+            var seed = (ISeedUserRoleInitial)sp.GetService(typeof(ISeedUserRoleInitial));
+            seed.SeedRoles();
+            seed.SeedUsers();
+
             return services;
         }
     }
