@@ -1,9 +1,11 @@
 ﻿using CleanLojaMvc.Application.DTOs;
 using CleanLojaMvc.Application.Insterfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanLojaMvc.WebUI.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;
